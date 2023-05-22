@@ -3,26 +3,22 @@
 
     const stored = storedData()
 
-    const createMovieTile = (id, poster) => {
-        const tile = document.createElement("div");
-        const img = document.createElement("img");
+    const tempArray = [];
+    
+    for (let i = 0; i < 20; i++) {
 
-        img.src = `https://image.tmdb.org/t/p/w500/${poster}`;
+    const tempData = {id: stored.list.results[i].id, poster: `https://image.tmdb.org/t/p/w500/${stored.list.results[i].poster_path}`}
 
-        tile.append(img);
-        document.body.append(tile); 
-
+    tempArray.push(tempData)
     }
 
-   for (let i = 0; i < 20; i++) {
-        createMovieTile(stored.list.results[i].id, stored.list.results[i].poster_path)
-    }
+    console.log(tempArray[0].poster)
 
 </script>
 
 <template>
-    <div id="content">
-        <p>hell</p>
+    <div>
+        <img v-for="path in tempArray" :src="path.poster" />
     </div>
 </template>
 
