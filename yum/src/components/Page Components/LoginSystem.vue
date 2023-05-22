@@ -4,8 +4,6 @@
   import axios from "axios";
   import { storedData } from '../../stores/data'
 
-  const stored = storedData()
-
   const TMDB_API_KEY = "d12599abac794e3972643d18b8533667";
 
   const getTMDBData = async (url) => {
@@ -23,9 +21,9 @@
         `https://api.themoviedb.org/3//movie/popular?api_key=${TMDB_API_KEY}&language=en-US&adult=false`
         );
 
-      stored.list = movie
+      storedData().list = movie
 
-      console.log(stored.list.results[2])
+      console.log(storedData().list)
 
       router.push('/Store')
     }
