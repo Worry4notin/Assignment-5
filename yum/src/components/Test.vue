@@ -18,7 +18,7 @@ let movie = await getTMDBData(
 
   stored.list = movie
 
-    console.log(stored.list.results)
+    console.log(stored.list.results[1])
 }
 </script>
 
@@ -30,3 +30,4 @@ let movie = await getTMDBData(
 
 <style scoped>
 </style>
+
