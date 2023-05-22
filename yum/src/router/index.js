@@ -4,6 +4,7 @@ import Home from '../components/Home.vue'
 import Login from '../components/Login.vue'
 import Store from '../components/Store.vue'
 import Test from '../components/Test.vue'
+import ViewProduct from '../components/ViewProduct.vue'
 
 const routes = [
     {
@@ -21,6 +22,10 @@ const routes = [
     {
         path: '/Test',
         component: Test
+    },
+    {
+        path: '/ViewProduct',
+        component: ViewProduct
     }
 
 ]

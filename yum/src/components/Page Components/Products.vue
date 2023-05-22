@@ -1,5 +1,6 @@
 <script setup>
     import { storedData } from '../../stores/data'
+    import router from '../../router/index'
 
     const stored = storedData()
 
@@ -12,13 +13,21 @@
     tempArray.push(tempData)
     }
 
-    console.log(tempArray[0].poster)
+    function viewProduct(id) {
+        storedData().viewTemp = id
+
+        console.log(id)
+        console.log(storedData().viewTemp)
+
+        router.push('/ViewProduct')
+
+    }
 
 </script>
 
 <template>
     <div>
-        <img v-for="path in tempArray" :src="path.poster" />
+        <img v-for="path in tempArray" :src="path.poster" @click="viewProduct(path.id)" />
     </div>
 </template>
 
