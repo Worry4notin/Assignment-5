@@ -1,9 +1,8 @@
 <script setup>
 import { storedData } from '../stores/data'
+import axios from "axios";
 
 const stored = storedData()
-
-import axios from "axios";
 
 const TMDB_API_KEY = "d12599abac794e3972643d18b8533667";
 

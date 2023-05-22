@@ -4,7 +4,7 @@ import Home from '../components/Home.vue'
 import Login from '../components/Login.vue'
 import Store from '../components/Store.vue'
 import Test from '../components/Test.vue'
-import ViewProduct from '../components/ViewProduct.vue'
+import Cart from '../components/Cart.vue'
 
 const routes = [
     {
@@ -24,9 +24,9 @@ const routes = [
         component: Test
     },
     {
-        path: '/ViewProduct',
-        component: ViewProduct
-    }
+        path: '/Cart',
+        component: Cart
+    },
 
 ]
 

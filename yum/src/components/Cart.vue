@@ -2,7 +2,9 @@
 </script>
 
 <template>
-    <h1>yay yay</h1>
+    <div>
+        <h1>Cart</h1>
+    </div>
 </template>
 
 <style scoped>
