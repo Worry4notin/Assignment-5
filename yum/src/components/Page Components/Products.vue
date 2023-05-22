@@ -1,10 +1,11 @@
 <script setup>
-import Products from './Page Components/Products.vue'
+    import { storedData } from '../../stores/data'
+
 </script>
 
 <template>
     <div>
-        <Products />
+    <h1>hello</h1>
     </div>
 </template>
 
