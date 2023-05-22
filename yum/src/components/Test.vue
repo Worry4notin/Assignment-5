@@ -16,7 +16,9 @@ let movie = await getTMDBData(
     `https://api.themoviedb.org/3//movie/popular?api_key=${TMDB_API_KEY}&language=en-US&adult=false`
   );
 
-    console.log(stored.count)
+  stored.list = movie
+
+    console.log(stored.list.results)
 }
 </script>
 
