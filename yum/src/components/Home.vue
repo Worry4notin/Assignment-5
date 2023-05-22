@@ -8,6 +8,7 @@ import Footer from './Page Components/Footer.vue'
 <template>
   <div>
     <Header />
+    <router-link to="/Test">Test Site</router-link>
   </div>
 </template>
 
