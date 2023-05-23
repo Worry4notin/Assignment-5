@@ -23,8 +23,6 @@
 
       storedData().list = movie
 
-      console.log(storedData().list)
-
       router.push('/Store')
     }
     else {

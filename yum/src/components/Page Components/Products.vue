@@ -26,7 +26,6 @@
         storedData().cartContent.push(storedData().viewTemp)
         const noDup = [...new Set(storedData().cartContent)]
         storedData().cartContent = noDup
-        console.log(storedData().cartContent)
     }
 
 </script>

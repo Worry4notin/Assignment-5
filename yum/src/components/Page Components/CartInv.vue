@@ -1,14 +1,14 @@
 <script setup>
     import { storedData } from '../../stores/data'
-    import { ref } from "vue";
-
-    console.log(storedData().cartContent)
 
     function remove(data){
-        console.log(storedData().cartContent.indexOf(data))
-        console.log(storedData().cartContent)
+        if(storedData().cartContent.indexOf(data) != 0){
+            storedData().cartContent.splice(storedData().cartContent.indexOf(data),storedData().cartContent.indexOf(data))
+        }
+        else{
+            storedData().cartContent.shift()
+        }
     }
-
 
 </script>
 
