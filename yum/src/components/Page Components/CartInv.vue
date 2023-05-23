@@ -2,12 +2,7 @@
     import { storedData } from '../../stores/data'
 
     function remove(data){
-        if(storedData().cartContent.indexOf(data) != 0){
-            storedData().cartContent.splice(storedData().cartContent.indexOf(data),storedData().cartContent.indexOf(data))
-        }
-        else{
-            storedData().cartContent.shift()
-        }
+        storedData().cartContent.splice(storedData().cartContent.indexOf(data),1)
     }
 
 </script>
@@ -15,7 +10,7 @@
 <template>
     <div>
         <div v-for="data in storedData().cartContent">
-        <img :src="data.poster">
+            <img :src="data.poster" class="poster">
         <button @click="remove(data)">Cancel</button>
         <button>Order</button>
         </div>
@@ -24,4 +19,8 @@
 </template>
 
 <style scoped>
+.poster{
+    height: 30%;
+    width: 30%;
+}
 </style>
