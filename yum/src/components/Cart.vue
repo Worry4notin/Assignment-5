@@ -1,9 +1,10 @@
 <script setup>
+    import Inv from './Page Components/CartInv.vue'
 </script>
 
 <template>
     <div>
-        <h1>Cart</h1>
+        <Inv />
     </div>
 </template>
 

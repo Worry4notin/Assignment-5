@@ -10,20 +10,23 @@
     
     for (let i = 0; i < 20; i++) {
 
-    const tempData = {id: stored.list.results[i].id, poster: `https://image.tmdb.org/t/p/w500/${stored.list.results[i].poster_path}`}
+    const tempData = {poster: `https://image.tmdb.org/t/p/w500/${stored.list.results[i].poster_path}`, data: stored.list.results[i]}
 
     tempArray.push(tempData)
     }
 
-    function viewProduct(id) {
-        storedData().viewTemp = id
+    function viewProduct(data) {
+        storedData().viewTemp = data
 
         isOpen.value = true
         console.log(isOpen.value)
     }
 
     function sendCart(){
-
+        storedData().cartContent.push(storedData().viewTemp)
+        const noDup = [...new Set(storedData().cartContent)]
+        storedData().cartContent = noDup
+        console.log(storedData().cartContent)
     }
 
 </script>
@@ -31,7 +34,7 @@
 <template>
         
     <div>
-        <img v-for="path in tempArray" :src="path.poster" @click="viewProduct(path.id)" />
+        <img v-for="path in tempArray" :src="path.poster" @click="viewProduct(path)" />
     </div>
 
     <div class="root">
