@@ -5,7 +5,8 @@
     console.log(storedData().cartContent)
 
     function remove(data){
-
+        console.log(storedData().cartContent.indexOf(data))
+        console.log(storedData().cartContent)
     }
 
 
@@ -15,7 +16,7 @@
     <div>
         <div v-for="data in storedData().cartContent">
         <img :src="data.poster">
-        <button>Cancel</button>
+        <button @click="remove(data)">Cancel</button>
         <button>Order</button>
         </div>
     </div>
