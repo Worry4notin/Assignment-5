@@ -19,7 +19,6 @@
         storedData().viewTemp = data
 
         isOpen.value = true
-        console.log(isOpen.value)
     }
 
     function sendCart(){
