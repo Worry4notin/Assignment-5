@@ -10,9 +10,13 @@
 <template>
     <div>
         <div v-for="data in storedData().cartContent">
-            <img :src="data.poster" class="poster">
-        <button @click="remove(data)">Cancel</button>
-        <button>Order</button>
+            <div>
+                <img :src="data.poster" class="poster">
+                <div>
+                    <button @click="remove(data)">Cancel</button>
+                    <button>Order</button>
+                </div>
+            </div>
         </div>
     </div>
 
