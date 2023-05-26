@@ -3,6 +3,7 @@
   import router from '../../router/index'
   import axios from "axios";
   import { storedData } from '../../stores/data'
+  import logo from './Logo.vue'
 
   const TMDB_API_KEY = "d12599abac794e3972643d18b8533667";
 
@@ -32,7 +33,8 @@
 </script>
 
 <template>
-  <div>
+    <logo />
+  <div class="login">
     <form @submit.prevent="submit">
       <input type="username" required placeholder="username" v-model="username">
       <input type="password" required placeholder="password" v-model="password">
@@ -43,4 +45,33 @@
 </template>
 
 <style scoped>
+  .login{
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88.5vh;
+  }
+
+  input{
+    display: block;
+    width: 550px;
+    height: 50px;
+    font-size: 25px;
+    padding-left: 1%;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  input[type=submit]{
+    margin-top: 1px;
+    font-family:cursive;
+  }
+
+    p{
+      color: red;
+      font-size: 25px;
+      font-family:cursive;
+    }
+
 </style>

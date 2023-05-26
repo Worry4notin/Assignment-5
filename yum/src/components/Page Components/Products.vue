@@ -30,11 +30,9 @@
 </script>
 
 <template>
-        
-    <div>
+    <div class="products">
         <img v-for="path in tempArray" :src="path.poster" @click="viewProduct(path)" />
     </div>
-
     <div class="root">
         <teleport to ="body">
             <div class="modal" v-if="isOpen">
@@ -51,6 +49,20 @@
 </template>
 
 <style scoped>
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 15px;
+    padding: 15px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
 
 .root{
     position: relative;
