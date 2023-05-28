@@ -7,7 +7,7 @@
       <h1>Free the line</h1>
       <h1>Beyond the movies</h1>
     </div>
-    <img src="../../../img/Hero img.png">
+    <img src="../../img/Hero img.png">
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <script setup>
   import { ref } from "vue";
-  import router from '../../router/index'
+  import router from '../router/index'
   import axios from "axios";
-  import { storedData } from '../../stores/data'
+  import { storedData } from '../stores/data'
   import logo from './Logo.vue'
 
   const TMDB_API_KEY = "d12599abac794e3972643d18b8533667";

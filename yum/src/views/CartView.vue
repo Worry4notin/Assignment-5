@@ -1,5 +1,5 @@
 <script setup>
-    import Inv from './Page Components/CartInv.vue'
+    import Inv from '../components/CartInv.vue'
 </script>
 
 <template>

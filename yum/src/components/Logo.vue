@@ -5,7 +5,7 @@
   <div>
     <div>
       <h1>StickMov</h1>
-      <img src="../../.././img/Logo.png" />
+      <img src="../../img/Logo.png" />
     </div>
   </div>
 </template>

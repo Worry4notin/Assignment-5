@@ -1,5 +1,5 @@
 <script setup>
-    import { storedData } from '../../stores/data'
+    import { storedData } from '../stores/data'
     import { ref } from "vue";
     let tempData = ref("");
     const isOpen = ref(false)

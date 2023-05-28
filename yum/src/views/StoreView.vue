@@ -1,6 +1,6 @@
 <script setup>
-import Products from './Page Components/Products.vue'
-import Cart from './Page Components/Interface.vue'
+import Products from '../components/Products.vue'
+import Cart from '../components/Interface.vue'
 </script>
 
 <template>

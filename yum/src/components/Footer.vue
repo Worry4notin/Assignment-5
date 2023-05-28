@@ -5,7 +5,7 @@
     <div class="footer">
         <div class="logo">
             <h1>StickMov</h1>
-            <img src="../../.././img/Logo.png" /> 
+            <img src="../../img/Logo.png" /> 
         </div>
         <div>
             <h2>Contacts</h2>
