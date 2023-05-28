@@ -1,5 +1,5 @@
 <script setup>
-  import Login from '../components/LoginSystem.vue'
+import Login from "../components/LoginSystem.vue";
 </script>
 
 <template>
@@ -8,5 +8,4 @@
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
