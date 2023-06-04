@@ -5,9 +5,10 @@ export const storedData = defineStore("data", () => {
   const list = ref("");
   const viewTemp = ref("");
   const cartContent = ref("");
+  const isOpen = ref(false);
 
   const cartArray = [];
   cartContent.value = cartArray;
 
-  return { list, viewTemp, cartContent };
+  return { list, viewTemp, cartContent, isOpen };
 });
