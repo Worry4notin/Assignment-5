@@ -7,13 +7,13 @@ import logo from "./Logo.vue";
 
 const TMDB_API_KEY = "d12599abac794e3972643d18b8533667";
 
-const getTMDBData = async (url) => {
-  return (await axios.get(url)).data;
-};
-
 var username = ref("");
 var password = ref("");
 var status = ref("");
+
+const getTMDBData = async (url) => {
+  return (await axios.get(url)).data;
+};
 
 async function submit() {
   if (username.value === "tmdb" && password.value === "movies") {

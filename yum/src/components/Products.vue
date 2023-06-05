@@ -2,7 +2,6 @@
 import { storedData } from "../stores/data";
 
 const stored = storedData();
-
 const tempArray = [];
 
 for (let i = 0; i < 20; i++) {
